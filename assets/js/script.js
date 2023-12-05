@@ -7,11 +7,11 @@ let searchTopicIndex = document.getElementById('searchTxtIndex');
 let searchTopicSearch = document.getElementById('searchTxtSearch');
 let selectFormatIndex = document.getElementById('formatSelectIndex');
 let selectFormatSearch = document.getElementById('formatSelectSearch');
-let formatType; // this should equal the value chosen by user in the select input
+let formatType = 'search'; // default value for URL - this will get replaced if user selects a format option from dropdown
 
 
-let queryURL = "https://www.loc.gov/{endpoint}/?fo=json"
-// above needs work - concatenate using variable (user selected) to structure API query
+let queryURL = "https://www.loc.gov/" + formatType + "/?q=" + topicTxt + "&fo=json"
+// uses var topicTxt for URL -- make sure to set this with searchTopicIndex or searchTopicSearch value prior to running fetch
 
 searchBtnIndex.addEventListener("submit", function() {
     // user selected input (searchTopicIndex & selectFormatIndex) saved in variables
