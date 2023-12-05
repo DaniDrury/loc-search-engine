@@ -13,7 +13,7 @@ let formatType; // this should equal the value chosen by user in the select inpu
 let queryURL = "https://www.loc.gov/{endpoint}/?fo=json"
 // above needs work - concatenate using variable (user selected) to structure API query
 
-searchBtnIndex.addEventListener("submit", funciton() {
+searchBtnIndex.addEventListener("submit", function() {
     // user selected input (searchTopicIndex & selectFormatIndex) saved in variables
     // document.location changed to search results page
     // send fetch query to loc API then format responses and create card elements to dispaly results?
