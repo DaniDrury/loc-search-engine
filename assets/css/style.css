@@ -1,3 +1,6 @@
+/* style sheet applied to both index.html & search-results.html pages -- therefore be aware that styles can be applied to elements on both page so be careful
+consider using ids to specify particular elements you want to add unique styling to */
+
 * {
     font-family: 'Times New Roman', Times, serif;
 }

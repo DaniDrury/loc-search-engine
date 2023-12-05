@@ -2,11 +2,13 @@
 let searchBtnIndex = document.getElementById('searchBtnIndex');
 let searchBtnSearch = document.getElementById('searchBtnSearch');
 let backBtn = document.getElementById('backBtn');
-let topicTxt = document.getElementById('topicSpan');
+let topicTxt = document.getElementById('topicSpan');  // this needs the search topic value input into it so it will display in search-results.html <h2> element
+// I'm also currently using this variable for the queryURL (topicTXT)
 let searchTopicIndex = document.getElementById('searchTxtIndex');
 let searchTopicSearch = document.getElementById('searchTxtSearch');
 let selectFormatIndex = document.getElementById('formatSelectIndex');
 let selectFormatSearch = document.getElementById('formatSelectSearch');
+let searchResultsCont = document.getElementById('searchResults'); // container element within which dynamically created search result cards should be added
 let formatType = 'search'; // default value for URL - this will get replaced if user selects a format option from dropdown
 
 
